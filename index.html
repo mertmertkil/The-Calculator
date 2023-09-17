@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body class="bg-secondary">
+  <div class="container-fluid ">
+    <h1 class="h1 mt-3 text-danger text-center"> The Calculator</h1>
+    <input style="width: 300px; position: relative; left:550px" type="text" id="display" class="form-control mb-2 mt-5 display-3 bg-info" disabled>
+    <div class="row mt-3">
+        <div style="position: relative; left:550px;" class="col ms-5 ">
+            <div class="btn-group" role="group">
+                <button class="btn btn-primary" onclick="appendNumber(7)">7</button>
+                <button class="btn btn-primary" onclick="appendNumber(8)">8</button>
+                <button class="btn btn-primary" onclick="appendNumber(9)">9</button>
+                <button class="btn btn-warning" onclick="appendOperator('+')">+</button>
+            </div>
+        </div>
+        <div class="row mt-3 ">
+            <div style="position: relative; left:550px;" class="col ms-5">
+                <div class="btn-group" role="group">
+                    <button class="btn btn-primary" onclick="appendNumber(4)">4</button>
+                    <button class="btn btn-primary" onclick="appendNumber(5)">5</button>
+                    <button class="btn btn-primary" onclick="appendNumber(6)">6</button>
+                    <button class="btn btn-warning" onclick="appendOperator('-')">-</button>
+    
+                </div>
+            </div>
+        </div>
+       <div class="row mt-3 ">
+        <div style="position: relative; left:550px;" class="col ms-5">
+            <div class="btn-group" role="group">
+                <button class="btn btn-primary" onclick="appendNumber(1)">1</button>
+                <button class="btn btn-primary" onclick="appendNumber(2)">2</button>
+                <button class="btn btn-primary" onclick="appendNumber(3)">3</button>
+                <button class="btn btn-warning" onclick="appendOperator('*')">*</button>
+            </div>
+        </div>
+       </div>
+       <div class="row mt-3">
+        <div style="position: relative; left:550px;" class="col ms-5">
+            <div class="btn-group" role="group">
+                <button class="btn btn-primary" onclick="clearDisplay()">C</button>
+                <button class="btn btn-primary" onclick="appendNumber(0)">0</button>
+                <button class="btn btn-primary" onclick="calculate()">=</button>
+                <button class="btn btn-warning" onclick="appendOperator('/')">/</button>
+
+            </div>
+        </div>
+       </div>
+       
+       
+    </div>
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
